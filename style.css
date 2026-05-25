@@ -2954,11 +2954,42 @@ body.light-mode .newsletter-form input {
         height: 250px;
     }
 
+    /* CONTACT PADDING FIX */
     .contact-section {
-        padding: 60px 24px;
+        padding: 60px 16px; /* CONTACT PADDING FIX */
+        width: 100%; /* CONTACT PADDING FIX */
+        box-sizing: border-box; /* CONTACT PADDING FIX */
+        overflow-x: hidden; /* CONTACT PADDING FIX */
+    }
+    /* CONTACT PADDING FIX */
+    .contact-layout {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+    /* CONTACT PADDING FIX */
+    .contact-form-col, .contact-info-col {
+        width: 100%;
+        box-sizing: border-box; /* CONTACT PADDING FIX */
+    }
+    /* CONTACT PADDING FIX */
+    .contact-form-card { 
+        padding: 28px 16px; /* CONTACT PADDING FIX */
+        width: 100%; /* CONTACT PADDING FIX */
+        box-sizing: border-box; /* CONTACT PADDING FIX */
+        overflow: hidden; /* CONTACT PADDING FIX */
+    }
+    /* CONTACT PADDING FIX */
+    .contact-form-card input, 
+    .contact-form-card select,
+    .contact-form-card textarea,
+    .floating-input {
+        width: 100%; /* CONTACT PADDING FIX */
+        box-sizing: border-box; /* CONTACT PADDING FIX */
     }
     .contact-title { font-size: 3rem; }
-    .contact-form-card { padding: 28px 24px; }
     .timing-pills { flex-direction: column; }
     .quick-stats-bar { flex-wrap: wrap; justify-content: center; }
     .map-block { height: 180px; }
