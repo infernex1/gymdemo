@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INFERNEX GYM | Join the Elite</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600&family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,400&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="auth.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="theme-transitioning">
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+
+    <!-- NAVBAR -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">INFERNEX</a>
+            
+            <div class="nav-links">
+                <a href="index.html#home">Home</a>
+                <a href="index.html#classes">Classes</a>
+                <a href="index.html#plans">Plans</a>
+                <a href="index.html#trainers">Trainers</a>
+                <a href="index.html#gallery">Gallery</a>
+                <a href="index.html#contact">Contact</a>
+            </div>
+            
+            <div class="nav-actions">
+                <button class="theme-toggle" aria-label="Toggle Dark/Light Mode">
+                    <span class="theme-icon moon"><i data-lucide="moon"></i></span>
+                    <span class="theme-icon sun"><i data-lucide="sun"></i></span>
+                    <div class="theme-thumb"></div>
+                </button>
+                <a href="login.html" class="btn-ghost">Login</a>
+                <a href="register.html" class="btn-primary" style="background: white; color: black;">Join Now</a>
+            </div>
+
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu">
+        <!-- MOBILE NAV FIX -->
+        <button class="mobile-close" aria-label="Close Menu">✕</button>
+        <div class="mobile-links">
+            <a href="index.html#home" class="mobile-link">Home</a>
+            <a href="index.html#classes" class="mobile-link">Classes</a>
+            <a href="index.html#plans" class="mobile-link">Plans</a>
+            <a href="index.html#trainers" class="mobile-link">Trainers</a>
+            <a href="index.html#gallery" class="mobile-link">Gallery</a>
+            <a href="index.html#contact" class="mobile-link">Contact</a>
+            <div class="mobile-actions">
+                <button class="theme-toggle" aria-label="Toggle Dark/Light Mode" style="margin: 0 auto 15px auto;">
+                    <span class="theme-icon moon"><i data-lucide="moon"></i></span>
+                    <span class="theme-icon sun"><i data-lucide="sun"></i></span>
+                    <div class="theme-thumb"></div>
+                </button>
+                <a href="login.html" class="btn-ghost">Login</a>
+                <a href="register.html" class="btn-primary" style="background: white; color: black;">Join Now</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- MAIN LAYOUT -->
+    <main class="register-layout">
+        <div class="register-card anim-fade-up">
+            <div class="card-top-bar"></div>
+            
+            <div class="form-header" style="text-align: center; margin-bottom: 20px;">
+                <div style="font-size: 11px; color: #FF6B35; letter-spacing: 4px; text-transform: uppercase; margin-bottom: 12px; display: inline-block;">
+                    JOIN THE ELITE
+                </div>
+                <h1 style="font-family: 'Bebas Neue', cursive; font-size: 3.5rem; color: white; line-height: 1; margin-bottom: 8px;">CREATE YOUR ACCOUNT</h1>
+                <p style="font-family: 'DM Sans', sans-serif; font-size: 14px; color: #666;">
+                    Start your transformation today.<br>First week is completely free.
+                </p>
+                <p style="font-family: 'DM Sans', sans-serif; font-size: 14px; color: #666; margin-top: 10px;">
+                    Already have an account? <a href="login.html" style="color: #FF6B35; text-decoration: none;">Sign in →</a>
+                </p>
+            </div>
+
+            <!-- Progress Dots -->
+            <div class="progress-dots">
+                <div class="dot-wrap active"><div class="dot"></div><span class="dot-label">Account</span></div>
+                <div class="dot-wrap"><div class="dot"></div><span class="dot-label">Profile</span></div>
+                <div class="dot-wrap"><div class="dot"></div><span class="dot-label">Goals</span></div>
+            </div>
+
+            <form id="register-form" style="position: relative; min-height: 400px; overflow-x: hidden;">
+                
+                <!-- STEP 1: Account Details -->
+                <div class="step-container active" id="step-1">
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px;">
+                        <div class="floating-input">
+                            <input type="text" id="fname" required placeholder=" ">
+                            <label for="fname">First Name</label>
+                        </div>
+                        <div class="floating-input">
+                            <input type="text" id="lname" required placeholder=" ">
+                            <label for="lname">Last Name</label>
+                        </div>
+                    </div>
+
+                    <div class="floating-input">
+                        <input type="email" id="reg-email" required placeholder=" ">
+                        <label for="reg-email">Email Address</label>
+                        <i class="fa-solid fa-check input-icon" style="color: #00FF88; display: none;"></i>
+                    </div>
+
+                    <div class="floating-input" style="display: flex; gap: 10px;">
+                        <div style="background: #111; border: 1px solid rgba(255,255,255,0.07); border-radius: 14px; padding: 0 15px; display: flex; align-items: center; color: #FF6B35; font-family: 'Space Mono', monospace;">+91</div>
+                        <div style="flex: 1; position: relative;">
+                            <input type="tel" id="phone" required placeholder=" " style="margin-bottom: 0;">
+                            <label for="phone">Phone Number (98765 43210)</label>
+                        </div>
+                    </div>
+
+                    <div class="floating-input" style="margin-top: 20px; margin-bottom: 10px;">
+                        <input type="password" id="reg-password" required placeholder=" ">
+                        <label for="reg-password">Create Password</label>
+                        <span class="toggle-pass input-icon"><i class="fa-solid fa-eye"></i></span>
+                    </div>
+
+                    <div class="pass-strength">
+                        <div class="pass-seg"></div>
+                        <div class="pass-seg"></div>
+                        <div class="pass-seg"></div>
+                        <div class="pass-seg"></div>
+                    </div>
+
+                    <div class="req-list">
+                        <div class="req-item"><i class="fa-solid fa-circle"></i> At least 8 characters</div>
+                        <div class="req-item"><i class="fa-solid fa-circle"></i> One uppercase letter</div>
+                        <div class="req-item"><i class="fa-solid fa-circle"></i> One number</div>
+                        <div class="req-item"><i class="fa-solid fa-circle"></i> One special character</div>
+                    </div>
+
+                    <div class="floating-input">
+                        <input type="password" id="confirm-pass" required placeholder=" ">
+                        <label for="confirm-pass">Confirm Password</label>
+                    </div>
+
+                    <button type="button" class="auth-btn" id="to-step-2" style="margin-top: 20px;">
+                        <span class="btn-text">CONTINUE →</span>
+                    </button>
+                </div>
+
+                <!-- STEP 2: Profile -->
+                <div class="step-container" id="step-2" style="position: absolute; top: 0; left: 0; width: 100%;">
+                    
+                    <h3 style="font-family: 'DM Sans', sans-serif; color: white; font-size: 15px; margin-bottom: 15px;">Your Gender</h3>
+                    <div style="display: flex; gap: 10px; margin-bottom: 30px;">
+                        <div class="social-btn" style="flex: 1; height: 50px; background: linear-gradient(135deg, #FF6B35, #FF8C42); border-color: transparent;"><i data-lucide="user"></i> Male</div>
+                        <div class="social-btn" style="flex: 1; height: 50px;"><i data-lucide="user"></i> Female</div>
+                        <div class="social-btn" style="flex: 1; height: 50px;">Other</div>
+                    </div>
+
+                    <h3 style="font-family: 'DM Sans', sans-serif; color: white; font-size: 15px; margin-bottom: 15px;">Your Fitness Goal</h3>
+                    <div class="goal-grid">
+                        <div class="goal-card active"><span class="icon"><i data-lucide="activity"></i></span>Weight Loss</div>
+                        <div class="goal-card"><span class="icon"><i data-lucide="dumbbell"></i></span>Muscle Gain</div>
+                        <div class="goal-card"><span class="icon"><i data-lucide="scale"></i></span>Body Recomp</div>
+                        <div class="goal-card"><span class="icon"><i data-lucide="trophy"></i></span>Athletic Perf</div>
+                        <div class="goal-card"><span class="icon"><i data-lucide="heart"></i></span>Gen Fitness</div>
+                        <div class="goal-card"><span class="icon"><i data-lucide="bone"></i></span>Rehab</div>
+                    </div>
+
+                    <div style="display: flex; gap: 15px; margin-top: 20px;">
+                        <button type="button" class="auth-btn" id="back-to-step-1" style="flex: 1; background: transparent; border: 1px solid rgba(255,255,255,0.2);">
+                            <span class="btn-text">← BACK</span>
+                        </button>
+                        <button type="button" class="auth-btn" id="to-step-3" style="flex: 2;">
+                            <span class="btn-text">CONTINUE →</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- STEP 3: Plan -->
+                <div class="step-container" id="step-3" style="position: absolute; top: 0; left: 0; width: 100%;">
+                    
+                    <div style="text-align: center; margin-bottom: 25px;">
+                        <h2 style="font-family: 'Bebas Neue', cursive; font-size: 2.5rem; color: white; margin-bottom: 5px;">PICK YOUR PLAN</h2>
+                        <p style="font-family: 'DM Sans', sans-serif; font-size: 13px; color: #00FF88;">
+                            <i class="fa-solid fa-check"></i> 7-day free trial on all plans &nbsp; 
+                            <i class="fa-solid fa-check"></i> Cancel anytime
+                        </p>
+                    </div>
+
+                    <div class="plan-list">
+                        <div class="plan-sel-card">
+                            <div>
+                                <h3 style="font-family: 'Bebas Neue', cursive; font-size: 1.5rem; color: white; letter-spacing: 1px;"><i class="fa-solid fa-bolt" style="color: #A0A0A0; font-size: 1rem; margin-right: 8px;"></i>STARTER</h3>
+                                <div style="font-family: 'Space Mono', monospace; font-size: 1.2rem; color: #FF6B35; margin-top: 5px;">₹999<span style="font-size: 12px; color: #666; font-family: 'DM Sans', sans-serif;"> /mo</span></div>
+                            </div>
+                            <div class="radio-circle"></div>
+                        </div>
+
+                        <div class="plan-sel-card active">
+                            <div class="plan-badge">MOST POPULAR</div>
+                            <div>
+                                <h3 style="font-family: 'Bebas Neue', cursive; font-size: 1.5rem; color: white; letter-spacing: 1px;"><i class="fa-solid fa-fire" style="color: #FF6B35; font-size: 1rem; margin-right: 8px;"></i>PRO</h3>
+                                <div style="font-family: 'Space Mono', monospace; font-size: 1.2rem; color: #FF6B35; margin-top: 5px;">₹1,999<span style="font-size: 12px; color: #666; font-family: 'DM Sans', sans-serif;"> /mo</span></div>
+                            </div>
+                            <div class="radio-circle"></div>
+                        </div>
+
+                        <div class="plan-sel-card">
+                            <div>
+                                <h3 style="font-family: 'Bebas Neue', cursive; font-size: 1.5rem; color: white; letter-spacing: 1px;"><i class="fa-solid fa-gem" style="color: #00D4FF; font-size: 1rem; margin-right: 8px;"></i>ELITE</h3>
+                                <div style="font-family: 'Space Mono', monospace; font-size: 1.2rem; color: #FF6B35; margin-top: 5px;">₹3,499<span style="font-size: 12px; color: #666; font-family: 'DM Sans', sans-serif;"> /mo</span></div>
+                            </div>
+                            <div class="radio-circle"></div>
+                        </div>
+                    </div>
+
+                    <label class="custom-check" style="margin-bottom: 30px; align-items: flex-start;">
+                        <input type="checkbox" required>
+                        <div class="check-box" style="margin-top: 2px;">
+                            <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                        </div>
+                        <span class="check-label" style="line-height: 1.4;">
+                            I agree to the <a href="#" style="color: #888;">Terms of Service</a>, <a href="#" style="color: #888;">Privacy Policy</a> and Membership Agreement
+                        </span>
+                    </label>
+
+                    <button type="submit" class="auth-btn" id="submit-reg-btn" style="height: 60px; font-size: 1.4rem;">
+                        <span class="btn-text">START MY FREE TRIAL</span>
+                        <div class="spinner"></div>
+                    </button>
+                </div>
+
+            </form>
+        </div>
+    </main>
+
+    <!-- Fake multi-step script additions for Step 2 -> Step 3 missing in main logic -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const step2 = document.getElementById('step-2');
+            const step3 = document.getElementById('step-3');
+            const toStep3Btn = document.getElementById('to-step-3');
+            const dots = document.querySelectorAll('.dot-wrap');
+
+            const updateDotsLocal = (step) => {
+                dots.forEach((d, i) => {
+                    d.querySelector('.dot').className = 'dot';
+                    if (i < step) d.querySelector('.dot').classList.add('completed');
+                    if (i === step) d.querySelector('.dot').classList.add('active');
+                });
+            };
+
+            if (toStep3Btn) {
+                toStep3Btn.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    step2.classList.add('slide-out');
+                    setTimeout(() => {
+                        step2.classList.remove('active', 'slide-out');
+                        step3.classList.add('active');
+                        updateDotsLocal(2);
+                    }, 400);
+                });
+            }
+        });
+    </script>
+
+    <script src="script.js"></script>
+    <script src="auth.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INFERNEX GYM | Sign In</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600&family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,400&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="auth.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="theme-transitioning">
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+
+    <!-- NAVBAR -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">INFERNEX</a>
+            
+            <div class="nav-links">
+                <a href="index.html#home">Home</a>
+                <a href="index.html#classes">Classes</a>
+                <a href="index.html#plans">Plans</a>
+                <a href="index.html#trainers">Trainers</a>
+                <a href="index.html#gallery">Gallery</a>
+                <a href="index.html#contact">Contact</a>
+            </div>
+            
+            <div class="nav-actions">
+                <button class="theme-toggle" aria-label="Toggle Dark/Light Mode">
+                    <span class="theme-icon moon"><i data-lucide="moon"></i></span>
+                    <span class="theme-icon sun"><i data-lucide="sun"></i></span>
+                    <div class="theme-thumb"></div>
+                </button>
+                <a href="login.html" class="btn-ghost active" style="color: var(--accent-primary); border-color: var(--accent-primary);">Login</a>
+                <a href="register.html" class="btn-primary">Join Now</a>
+            </div>
+
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu">
+        <!-- MOBILE NAV FIX -->
+        <button class="mobile-close" aria-label="Close Menu">✕</button>
+        <div class="mobile-links">
+            <a href="index.html#home" class="mobile-link">Home</a>
+            <a href="index.html#classes" class="mobile-link">Classes</a>
+            <a href="index.html#plans" class="mobile-link">Plans</a>
+            <a href="index.html#trainers" class="mobile-link">Trainers</a>
+            <a href="index.html#gallery" class="mobile-link">Gallery</a>
+            <a href="index.html#contact" class="mobile-link">Contact</a>
+            <div class="mobile-actions">
+                <button class="theme-toggle" aria-label="Toggle Dark/Light Mode" style="margin: 0 auto 15px auto;">
+                    <span class="theme-icon moon"><i data-lucide="moon"></i></span>
+                    <span class="theme-icon sun"><i data-lucide="sun"></i></span>
+                    <div class="theme-thumb"></div>
+                </button>
+                <a href="login.html" class="btn-ghost" style="color: var(--accent-primary); border-color: var(--accent-primary);">Login</a>
+                <a href="register.html" class="btn-primary">Join Now</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- MAIN LAYOUT -->
+    <main class="split-layout">
+        <!-- Left Side -->
+        <!-- LEFT PANEL IMAGE FIX -->
+        <div class="split-left" style="background-image: url('./brett-jordan-U2q73PfHFpM-unsplash\ \(1\).jpg');">
+            <div class="glow-circle glow-1"></div>
+            <div class="glow-circle glow-2"></div>
+            
+            <div class="split-left-content anim-fade-up">
+                <a href="index.html" class="brand-logo">INFERNEX</a>
+                <h1 class="brand-title">FORGE YOUR<br>LEGEND</h1>
+                <p class="brand-subtitle">Welcome back, champion. Your journey continues today.</p>
+            </div>
+            
+            <div class="social-proof-bar anim-fade-up" style="animation-delay: 0.2s;">
+                <div class="proof-pill"><i data-lucide="star"></i> 4.9 Rating</div>
+                <div class="proof-pill"><i data-lucide="users"></i> 5,200 Members</div>
+                <div class="proof-pill"><i data-lucide="trophy"></i> #1 Gym in City</div>
+            </div>
+        </div>
+
+        <!-- Right Side -->
+        <div class="split-right">
+            <div class="form-container">
+                <div class="form-header anim-fade-up" style="animation-delay: 0.3s; margin-bottom: 40px; text-align: center;">
+                    <div style="font-size: 11px; color: #FF6B35; letter-spacing: 4px; text-transform: uppercase; margin-bottom: 12px; display: flex; flex-direction: column; align-items: center; gap: 8px;">
+                        WELCOME BACK
+                        <div style="width: 40px; height: 2px; background: #FF6B35;"></div>
+                    </div>
+                    <h2 style="font-family: 'Bebas Neue', cursive; font-size: 4rem; color: white; line-height: 1; margin-bottom: 8px;">SIGN IN</h2>
+                    <p style="font-family: 'DM Sans', sans-serif; font-size: 14px; color: #666;">
+                        Don't have an account? <a href="register.html" style="color: #FF6B35; text-decoration: none;">Create one free →</a>
+                    </p>
+                </div>
+
+                <form id="login-form">
+                    <div class="floating-input anim-fade-up" style="animation-delay: 0.4s;">
+                        <input type="email" id="email" required placeholder=" ">
+                        <label for="email">Email Address</label>
+                        <i class="fa-solid fa-envelope input-icon"></i>
+                    </div>
+
+                    <div class="floating-input anim-fade-up" style="animation-delay: 0.5s; margin-bottom: 10px;">
+                        <input type="password" id="password" required placeholder=" ">
+                        <label for="password">Password</label>
+                        <span class="toggle-pass input-icon"><i class="fa-solid fa-eye"></i></span>
+                    </div>
+
+                    <div class="flex-between anim-fade-up" style="animation-delay: 0.6s; display: flex; justify-content: space-between; align-items: center; margin-bottom: 30px;">
+                        <label class="custom-check">
+                            <input type="checkbox" id="remember">
+                            <div class="check-box">
+                                <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            </div>
+                            <span class="check-label">Remember me</span>
+                        </label>
+                        
+                        <a href="#" id="forgot-link" style="font-size: 13px; color: #FF6B35; text-decoration: none;">Forgot password?</a>
+                    </div>
+
+                    <div class="anim-fade-up" style="animation-delay: 0.7s;">
+                        <button type="submit" class="auth-btn" id="signin-btn">
+                            <span class="btn-text">SIGN IN</span>
+                            <div class="spinner"></div>
+                        </button>
+                    </div>
+                </form>
+
+                <div class="anim-fade-up" style="animation-delay: 0.8s;">
+                    <div style="display: flex; align-items: center; gap: 15px; margin: 30px 0;">
+                        <div style="flex: 1; height: 1px; background: rgba(255,255,255,0.08);"></div>
+                        <span style="font-family: 'DM Sans', sans-serif; font-size: 12px; color: #444;">or continue with</span>
+                        <div style="flex: 1; height: 1px; background: rgba(255,255,255,0.08);"></div>
+                    </div>
+
+                    <div class="social-btns">
+                        <a href="#" class="social-btn">
+                            <i class="fa-brands fa-google" style="color: #DB4437;"></i> Google
+                        </a>
+                        <a href="#" class="social-btn">
+                            <i class="fa-brands fa-apple"></i> Apple
+                        </a>
+                    </div>
+
+                    <p style="text-align: center; margin-top: 40px; font-size: 12px; color: #444; font-family: 'DM Sans', sans-serif;">
+                        By signing in, you agree to our<br>
+                        <a href="#" style="color: #666; text-decoration: none;">Terms of Service</a> and 
+                        <a href="#" style="color: #666; text-decoration: none;">Privacy Policy</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Forgot Password Modal -->
+    <div class="modal-overlay" id="forgot-modal">
+        <div class="modal-card">
+            <h3 style="font-family: 'Bebas Neue', cursive; font-size: 2rem; color: white; margin-bottom: 5px;">RESET PASSWORD</h3>
+            <p style="font-family: 'DM Sans', sans-serif; font-size: 13px; color: #666; margin-bottom: 30px;">
+                Enter your email and we'll send you a reset link.
+            </p>
+            
+            <div class="floating-input">
+                <input type="email" id="reset-email" required placeholder=" ">
+                <label for="reset-email">Email Address</label>
+            </div>
+            
+            <button class="auth-btn" style="height: 48px; font-size: 1.1rem; margin-bottom: 15px;">SEND RESET LINK</button>
+            
+            <div style="text-align: center;">
+                <a href="#" id="close-modal" style="font-size: 13px; color: #666; text-decoration: none;">Cancel</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="auth.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>

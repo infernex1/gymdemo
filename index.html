@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INFERNEX GYM | Forge Your Legend</title>
+    <meta name="description" content="INFERNEX GYM - Where Elite Athletes Are Built. Premium fitness classes, personal training, and state-of-the-art facilities.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600&family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,400&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+
+    <!-- Loading Screen -->
+    <div class="loader">
+        <h1 class="loader-logo">INFERNEX GYM</h1>
+    </div>
+
+    <!-- Noise Overlay -->
+    <div class="noise-overlay"></div>
+
+    <!-- NAVBAR -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">INFERNEX</a>
+            
+            <div class="nav-links">
+                <a href="#home" class="active">Home</a>
+                <a href="#classes">Classes</a>
+                <a href="#plans">Plans</a>
+                <a href="#trainers">Trainers</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#contact">Contact</a>
+            </div>
+            
+            <div class="nav-actions">
+                <button class="theme-toggle" aria-label="Toggle Dark/Light Mode">
+                    <span class="theme-icon moon"><i data-lucide="moon"></i></span>
+                    <span class="theme-icon sun"><i data-lucide="sun"></i></span>
+                    <div class="theme-thumb"></div>
+                </button>
+                <a href="login.html" class="btn-ghost">Login</a>
+                <a href="register.html" class="btn-primary">Join Now</a>
+            </div>
+
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu">
+        <!-- MOBILE NAV FIX -->
+        <button class="mobile-close" aria-label="Close Menu">✕</button>
+        <div class="mobile-links">
+            <a href="#home" class="mobile-link">Home</a>
+            <a href="#classes" class="mobile-link">Classes</a>
+            <a href="#plans" class="mobile-link">Plans</a>
+            <a href="#trainers" class="mobile-link">Trainers</a>
+            <a href="#gallery" class="mobile-link">Gallery</a>
+            <a href="#contact" class="mobile-link">Contact</a>
+            <div class="mobile-actions">
+                <button class="theme-toggle" aria-label="Toggle Dark/Light Mode" style="margin: 0 auto 15px auto;">
+                    <span class="theme-icon moon"><i data-lucide="moon"></i></span>
+                    <span class="theme-icon sun"><i data-lucide="sun"></i></span>
+                    <div class="theme-thumb"></div>
+                </button>
+                <a href="login.html" class="btn-ghost">Login</a>
+                <a href="register.html" class="btn-primary">Join Now</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- HERO SECTION -->
+    <section id="home" class="hero">
+        <div class="hero-bg" style="background-image: url('./hero_bg_1777615520710.png');"></div>
+        <div class="particles" id="particles"></div>
+        
+        <div class="hero-content">
+            <span class="hero-label reveal-up">ELITE FITNESS HUB</span>
+            <h1 class="hero-title reveal-up">FORGE YOUR LEGEND</h1>
+            <p class="hero-subtitle reveal-up delay-1">Where Elite Athletes Are Built</p>
+            
+            <div class="hero-ctas reveal-up delay-2">
+                <a href="#plans" class="hero-btn-primary">Start Free Trial</a>
+                <a href="#" class="hero-btn-secondary"><span class="play-icon-circle"><i class="fa-solid fa-play"></i></span> Watch Our Story</a>
+            </div>
+        </div>
+
+        <div class="scroll-indicator">
+            <i class="fa-solid fa-chevron-down"></i>
+        </div>
+
+        <div class="stats-bar">
+            <div class="stat-item"><span class="counter" data-target="5200">0</span>+ Members</div>
+            <div class="stat-divider">|</div>
+            <div class="stat-item"><span class="counter" data-target="48">0</span> Expert Trainers</div>
+            <div class="stat-divider">|</div>
+            <div class="stat-item"><span class="counter" data-target="120">0</span>+ Weekly Classes</div>
+            <div class="stat-divider">|</div>
+            <div class="stat-item">Est. 2015</div>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="about section-padding diagonal-bottom">
+        <div class="container grid-2-col">
+            <div class="about-left reveal-left">
+                <div class="huge-number">10</div>
+                <h3 class="about-heading">Years of Excellence</h3>
+            </div>
+            <div class="about-right reveal-right">
+                <p class="manifesto">
+                    We don't just build bodies; we forge mindsets. INFERNEX is the sanctuary for those who refuse to be average. 
+                    <br><br>
+                    State-of-the-art equipment, world-class coaching, and an unbreakable community. This is where your potential meets our passion. Step into the fire.
+                </p>
+                <div class="accent-line"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MEMBERSHIP PLANS -->
+    <section id="plans" class="plans section-padding diagonal-bottom">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <h2 class="section-title">CHOOSE YOUR WEAPON</h2>
+                <div class="billing-toggle">
+                    <span class="active" id="monthly-btn">Monthly</span>
+                    <div class="toggle-switch" id="billing-toggle">
+                        <div class="toggle-circle"></div>
+                    </div>
+                    <span id="annual-btn">Annual <span class="badge-save">Save 25%</span></span>
+                </div>
+            </div>
+
+            <div class="plans-grid">
+                <!-- Starter -->
+                <div class="plan-card reveal-up">
+                    <div class="plan-icon"><i class="fa-solid fa-bolt"></i></div>
+                    <h3 class="plan-name">STARTER</h3>
+                    <p class="plan-tagline">Begin your journey</p>
+                    <div class="plan-price"><span class="currency">₹</span><span class="amount" data-monthly="999" data-annual="8991">999</span><span class="period">/mo</span></div>
+                    
+                    <ul class="plan-features">
+                        <li><i class="fa-solid fa-check text-success"></i> Gym Access (Off-peak)</li>
+                        <li><i class="fa-solid fa-check text-success"></i> Locker Room</li>
+                        <li class="missing"><i class="fa-solid fa-xmark"></i> Group Classes</li>
+                        <li class="missing"><i class="fa-solid fa-xmark"></i> Personal Training</li>
+                    </ul>
+                    <a href="#" class="btn-ghost full-width">Select Plan</a>
+                </div>
+
+                <!-- Pro -->
+                <div class="plan-card featured reveal-up delay-1">
+                    <div class="featured-badge">Most Popular</div>
+                    <div class="plan-icon"><i class="fa-solid fa-fire text-primary"></i></div>
+                    <h3 class="plan-name">PRO</h3>
+                    <p class="plan-tagline">For the dedicated</p>
+                    <div class="plan-price text-primary"><span class="currency">₹</span><span class="amount" data-monthly="1999" data-annual="17991">1,999</span><span class="period">/mo</span></div>
+                    
+                    <ul class="plan-features">
+                        <li><i class="fa-solid fa-check text-success"></i> 24/7 Gym Access</li>
+                        <li><i class="fa-solid fa-check text-success"></i> All Group Classes</li>
+                        <li><i class="fa-solid fa-check text-success"></i> 1 PT Session/mo</li>
+                        <li class="missing"><i class="fa-solid fa-xmark"></i> Recovery Suite</li>
+                    </ul>
+                    <a href="#" class="btn-primary full-width">Select Plan</a>
+                </div>
+
+                <!-- Elite -->
+                <div class="plan-card reveal-up delay-2">
+                    <div class="plan-icon"><i class="fa-solid fa-gem text-secondary"></i></div>
+                    <h3 class="plan-name">ELITE</h3>
+                    <p class="plan-tagline">Peak performance</p>
+                    <div class="plan-price"><span class="currency">₹</span><span class="amount" data-monthly="3499" data-annual="31491">3,499</span><span class="period">/mo</span></div>
+                    
+                    <ul class="plan-features">
+                        <li><i class="fa-solid fa-check text-success"></i> 24/7 Gym Access</li>
+                        <li><i class="fa-solid fa-check text-success"></i> Unlimited Classes</li>
+                        <li><i class="fa-solid fa-check text-success"></i> 4 PT Sessions/mo</li>
+                        <li><i class="fa-solid fa-check text-success"></i> Recovery Suite Access</li>
+                    </ul>
+                    <a href="#" class="btn-ghost full-width">Select Plan</a>
+                </div>
+
+                <!-- Unlimited -->
+                <div class="plan-card reveal-up delay-3">
+                    <div class="plan-icon"><i class="fa-solid fa-crown"></i></div>
+                    <h3 class="plan-name">UNLIMITED</h3>
+                    <p class="plan-tagline">No compromises</p>
+                    <div class="plan-price"><span class="currency">₹</span><span class="amount" data-monthly="5999" data-annual="53991">5,999</span><span class="period">/mo</span></div>
+                    
+                    <ul class="plan-features">
+                        <li><i class="fa-solid fa-check text-success"></i> All Access Pass</li>
+                        <li><i class="fa-solid fa-check text-success"></i> Unlimited PT</li>
+                        <li><i class="fa-solid fa-check text-success"></i> Nutrition Coaching</li>
+                        <li><i class="fa-solid fa-check text-success"></i> VIP Guest Pass</li>
+                    </ul>
+                    <a href="#" class="btn-ghost full-width">Select Plan</a>
+                </div>
+            </div>
+            
+            <div class="feature-comparison reveal-up">
+                <h3 class="comparison-title">Feature Comparison</h3>
+                <div class="comparison-table-wrap">
+                    <table class="comparison-table">
+                        <thead>
+                            <tr>
+                                <th>Features</th>
+                                <th>Starter</th>
+                                <th>Pro</th>
+                                <th>Elite</th>
+                                <th>Unlimited</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Cardio & Weights</td>
+                                <td><div class="dot included"></div></td>
+                                <td><div class="dot included"></div></td>
+                                <td><div class="dot included"></div></td>
+                                <td><div class="dot included"></div></td>
+                            </tr>
+                            <tr>
+                                <td>Group Classes</td>
+                                <td><div class="dot excluded"></div></td>
+                                <td><div class="dot included"></div></td>
+                                <td><div class="dot included"></div></td>
+                                <td><div class="dot included"></div></td>
+                            </tr>
+                            <tr>
+                                <td>Sauna & Steam</td>
+                                <td><div class="dot excluded"></div></td>
+                                <td><div class="dot excluded"></div></td>
+                                <td><div class="dot included"></div></td>
+                                <td><div class="dot included"></div></td>
+                            </tr>
+                            <tr>
+                                <td>Towel Service</td>
+                                <td><div class="dot excluded"></div></td>
+                                <td><div class="dot excluded"></div></td>
+                                <td><div class="dot excluded"></div></td>
+                                <td><div class="dot included"></div></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CLASS SCHEDULE -->
+    <section id="classes" class="classes section-padding diagonal-bottom relative">
+        <div class="glow-orb blue"></div>
+        <div class="container">
+            <div class="section-header reveal-up">
+                <h2 class="section-title">WEEKLY ARSENAL</h2>
+                <div class="day-tabs">
+                    <button class="tab-btn active">Mon</button>
+                    <button class="tab-btn">Tue</button>
+                    <button class="tab-btn">Wed</button>
+                    <button class="tab-btn">Thu</button>
+                    <button class="tab-btn">Fri</button>
+                    <button class="tab-btn">Sat</button>
+                    <button class="tab-btn">Sun</button>
+                </div>
+                <div class="filter-chips">
+                    <span class="chip active">All</span>
+                    <span class="chip">HIIT</span>
+                    <span class="chip">Crossfit</span>
+                    <span class="chip">Yoga</span>
+                    <span class="chip">Boxing</span>
+                </div>
+            </div>
+
+            <div class="classes-grid">
+                <!-- Class 1 -->
+                <div class="class-card reveal-up">
+                    <div class="class-header">
+                        <span class="time-badge">07:00 AM</span>
+                        <span class="status-tag open">Open</span>
+                    </div>
+                    <h3 class="class-name">INFERNO HIIT</h3>
+                    <div class="class-meta">
+                        <div class="trainer-info">
+                            <div class="trainer-avatar"><i class="fa-solid fa-user"></i></div>
+                            <span>Marcus J.</span>
+                        </div>
+                        <span class="intensity advanced">Advanced • 45m</span>
+                    </div>
+                    <div class="spots-wrap">
+                        <div class="spots-text">12 / 20 spots</div>
+                        <div class="progress-bar"><div class="progress" style="width: 60%;"></div></div>
+                    </div>
+                    <button class="btn-ghost full-width">Book Now</button>
+                </div>
+
+                <!-- Class 2 -->
+                <div class="class-card reveal-up delay-1">
+                    <div class="class-header">
+                        <span class="time-badge">09:00 AM</span>
+                        <span class="status-tag full">Full</span>
+                    </div>
+                    <h3 class="class-name">TITAN CROSSFIT</h3>
+                    <div class="class-meta">
+                        <div class="trainer-info">
+                            <div class="trainer-avatar"><i class="fa-solid fa-user"></i></div>
+                            <span>Sarah K.</span>
+                        </div>
+                        <span class="intensity intermediate">Inter • 60m</span>
+                    </div>
+                    <div class="spots-wrap">
+                        <div class="spots-text text-muted">20 / 20 spots</div>
+                        <div class="progress-bar"><div class="progress full-progress" style="width: 100%;"></div></div>
+                    </div>
+                    <button class="btn-ghost full-width disabled">Join Waitlist</button>
+                </div>
+
+                <!-- Class 3 -->
+                <div class="class-card reveal-up delay-2">
+                    <div class="class-header">
+                        <span class="time-badge">06:00 PM</span>
+                        <span class="status-tag open">Open</span>
+                    </div>
+                    <h3 class="class-name">STRIKE BOXING</h3>
+                    <div class="class-meta">
+                        <div class="trainer-info">
+                            <div class="trainer-avatar"><i class="fa-solid fa-user"></i></div>
+                            <span>David R.</span>
+                        </div>
+                        <span class="intensity all-levels">All Levels • 50m</span>
+                    </div>
+                    <div class="spots-wrap">
+                        <div class="spots-text">5 / 15 spots</div>
+                        <div class="progress-bar"><div class="progress" style="width: 33%;"></div></div>
+                    </div>
+                    <button class="btn-ghost full-width">Book Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TRAINER PROFILES -->
+    <section id="trainers" class="trainers section-padding diagonal-bottom">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <h2 class="section-title">THE ARCHITECTS</h2>
+                <p class="section-subtitle">Elite professionals dedicated to your evolution.</p>
+            </div>
+
+            <div class="trainers-grid">
+                <!-- Trainer 1 -->
+                <div class="trainer-card reveal-up">
+                    <div class="trainer-img" style="background-image: url('./trainer_1_1777615539645.png');"></div>
+                    <div class="trainer-info-overlay">
+                        <div class="exp-badge">8 YRS EXP</div>
+                        <h3 class="trainer-name">MARCUS V.</h3>
+                        <p class="trainer-tags">Strength | Hypertrophy</p>
+                    </div>
+                    <div class="trainer-hover-content">
+                        <div class="rating"><i class="fa-solid fa-star"></i> 4.9 (120 reviews)</div>
+                        <p class="bio">Former Olympian specializing in explosive strength and pure muscle hypertrophy. No excuses.</p>
+                        <div class="socials">
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        </div>
+                        <button class="btn-primary">Book Session</button>
+                    </div>
+                </div>
+
+                <!-- Trainer 2 -->
+                <div class="trainer-card reveal-up delay-1">
+                    <div class="trainer-img" style="background-image: url('./trainer_2_1777615583015.png');"></div>
+                    <div class="trainer-info-overlay">
+                        <div class="exp-badge">6 YRS EXP</div>
+                        <h3 class="trainer-name">SARAH K.</h3>
+                        <p class="trainer-tags">HIIT | Mobility</p>
+                    </div>
+                    <div class="trainer-hover-content">
+                        <div class="rating"><i class="fa-solid fa-star"></i> 5.0 (89 reviews)</div>
+                        <p class="bio">Expert in functional movement and high-intensity conditioning. She will push your limits.</p>
+                        <div class="socials">
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                        </div>
+                        <button class="btn-primary">Book Session</button>
+                    </div>
+                </div>
+                
+                <!-- Trainer 3 (Placeholder) -->
+                <div class="trainer-card reveal-up delay-2">
+                    <div class="trainer-img" style="background-color: #1a1a1a; display: flex; align-items: center; justify-content: center; color: #333; font-size: 4rem;">
+                        <i class="fa-solid fa-dumbbell"></i>
+                    </div>
+                    <div class="trainer-info-overlay">
+                        <div class="exp-badge">10 YRS EXP</div>
+                        <h3 class="trainer-name">DAVID R.</h3>
+                        <p class="trainer-tags">Boxing | Conditioning</p>
+                    </div>
+                    <div class="trainer-hover-content">
+                        <div class="rating"><i class="fa-solid fa-star"></i> 4.8 (210 reviews)</div>
+                        <p class="bio">Pro boxer turned elite coach. Mastering the sweet science of striking and cardiovascular endurance.</p>
+                        <div class="socials">
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                        <button class="btn-primary">Book Session</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TRANSFORMATION GALLERY -->
+    <section id="transformations" class="transformations section-padding diagonal-bottom">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <h2 class="section-title">THE RESULTS</h2>
+                <p class="section-subtitle">Real people. Absolute dedication. Undeniable results.</p>
+                <div class="filter-chips mt-2">
+                    <span class="chip active">All</span>
+                    <span class="chip">Weight Loss</span>
+                    <span class="chip">Muscle Gain</span>
+                    <span class="chip">Body Recomp</span>
+                </div>
+            </div>
+
+            <div class="transform-grid">
+                <div class="transform-card reveal-up">
+                    <div class="transform-imgs">
+                        <div class="img-after" style="background-color: #1a1a1a;">
+                            <span class="img-label">AFTER</span>
+                        </div>
+                    </div>
+                    <div class="transform-info">
+                        <h3>Alex M.</h3>
+                        <p class="transform-tag">-24kg in 6 months</p>
+                    </div>
+                </div>
+                
+                <div class="transform-card reveal-up delay-1">
+                    <div class="transform-imgs">
+                        <div class="img-after" style="background-color: #222;">
+                            <span class="img-label">AFTER</span>
+                        </div>
+                    </div>
+                    <div class="transform-info">
+                        <h3>Chris D.</h3>
+                        <p class="transform-tag">+8kg Muscle Mass</p>
+                    </div>
+                </div>
+
+                <div class="transform-card reveal-up delay-2">
+                    <div class="transform-imgs">
+                        <div class="img-after" style="background-color: #111;">
+                            <span class="img-label">AFTER</span>
+                        </div>
+                    </div>
+                    <div class="transform-info">
+                        <h3>Sam R.</h3>
+                        <p class="transform-tag">Complete Recomp</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BMI CALCULATOR SECTION -->
+    <section id="bmi" class="bmi-section diagonal-bottom">
+        <div class="bmi-container">
+            <div class="bmi-left section-padding">
+                <h2 class="section-title">CALCULATE YOUR STATS</h2>
+                <p class="text-muted mb-2">Know your numbers to dominate your goals.</p>
+                
+                <form id="bmi-form" class="bmi-form">
+                    <div class="gender-toggle">
+                        <label class="radio-label">
+                            <input type="radio" name="gender" value="male" checked>
+                            <span class="radio-btn"><i class="fa-solid fa-mars"></i> Male</span>
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="gender" value="female">
+                            <span class="radio-btn"><i class="fa-solid fa-venus"></i> Female</span>
+                        </label>
+                    </div>
+
+                    <div class="slider-group">
+                        <div class="slider-header">
+                            <label>Height (cm)</label>
+                            <span id="height-val">175</span>
+                        </div>
+                        <input type="range" id="height-slider" min="100" max="250" value="175" class="custom-slider">
+                    </div>
+
+                    <div class="slider-group">
+                        <div class="slider-header">
+                            <label>Weight (kg)</label>
+                            <span id="weight-val">70</span>
+                        </div>
+                        <input type="range" id="weight-slider" min="40" max="200" value="70" class="custom-slider">
+                    </div>
+
+                    <div class="slider-group">
+                        <div class="slider-header">
+                            <label>Age</label>
+                            <span id="age-val">25</span>
+                        </div>
+                        <input type="range" id="age-slider" min="16" max="80" value="25" class="custom-slider">
+                    </div>
+
+                    <button type="submit" class="btn-primary full-width mt-1">Calculate</button>
+                </form>
+            </div>
+            
+            <div class="bmi-right section-padding">
+                <div class="results-box" id="results-box">
+                    <div class="result-placeholder">
+                        <i class="fa-solid fa-chart-line" style="font-size: 3rem; margin-bottom: 1rem; color: rgba(255,107,53,0.3);"></i>
+                        <h3>Awaiting Input</h3>
+                        <p>Fill out the form to see your metrics.</p>
+                    </div>
+                    <div class="result-data hidden">
+                        <h3 class="result-title">YOUR METRICS</h3>
+                        <div class="bmi-score-wrap">
+                            <div class="score-label">BMI SCORE</div>
+                            <div class="score-value" id="bmi-score">22.9</div>
+                            <div class="score-category" id="bmi-category">Normal Weight</div>
+                        </div>
+                        
+                        <div class="metrics-grid">
+                            <div class="metric-item">
+                                <div class="m-label">Est. Daily Calories</div>
+                                <div class="m-val" id="calorie-val">2,450 <span class="unit">kcal</span></div>
+                            </div>
+                            <div class="metric-item">
+                                <div class="m-label">Recommended Plan</div>
+                                <div class="m-val text-primary">Pro Plan</div>
+                            </div>
+                        </div>
+
+                        <a href="#plans" class="btn-ghost full-width mt-2">Get Your Custom Plan</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GALLERY SECTION -->
+    <section id="gallery" class="gallery section-padding diagonal-bottom relative">
+        <div class="glow-orb orange"></div>
+        <div class="container">
+            <div class="section-header reveal-up">
+                <h2 class="section-title">THE SANCTUARY</h2>
+                <div class="gallery-tabs">
+                    <span class="tab active">Equipment</span>
+                    <span class="tab">Studio</span>
+                    <span class="tab">Locker Room</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="gallery-scroll-wrap reveal-up">
+            <div class="gallery-track">
+                <div class="gallery-item" style="background-image: url('./facility_1_1777615794943.png');">
+                    <div class="gallery-caption">State of the art free weights</div>
+                </div>
+                <div class="gallery-item" style="background-color: #1a1a1a;">
+                    <div class="gallery-caption">Cardio Deck</div>
+                </div>
+                <div class="gallery-item" style="background-color: #222;">
+                    <div class="gallery-caption">Power Racks</div>
+                </div>
+                <div class="gallery-item" style="background-color: #141414;">
+                    <div class="gallery-caption">Functional Turf</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="testimonials section-padding diagonal-bottom">
+        <div class="container">
+            <i class="fa-solid fa-quote-left quote-icon reveal-up"></i>
+            <h2 class="section-title text-center reveal-up">VOICES OF GLORY</h2>
+            
+            <div class="testimonial-carousel reveal-up delay-1">
+                <div class="testimonial-card">
+                    <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                    <p class="quote">"INFERNEX completely changed my approach to fitness. The trainers don't let you quit on yourself. Best facility I've ever trained at."</p>
+                    <div class="client-info">
+                        <div class="client-avatar bg-primary">J</div>
+                        <div>
+                            <h4 class="client-name">James T.</h4>
+                            <span class="client-membership">Elite Member</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BLOG / TIPS PREVIEW -->
+    <section id="blog" class="blog section-padding diagonal-bottom relative">
+        <div class="glow-orb blue" style="top: 20%; left: -10%;"></div>
+        <div class="container">
+            <div class="section-header reveal-up">
+                <h2 class="section-title">THE INTEL</h2>
+                <p class="section-subtitle">Master your training, nutrition, and recovery.</p>
+            </div>
+
+            <div class="blog-grid">
+                <div class="blog-card reveal-up">
+                    <div class="blog-img" style="background-color: #1a1a1a;"></div>
+                    <div class="blog-content">
+                        <span class="blog-category">Nutrition</span>
+                        <h3 class="blog-title">Fueling for Hypertrophy: The Science of Muscle Growth</h3>
+                        <p class="blog-excerpt">Discover exactly what to eat before and after your workouts to maximize muscle protein synthesis.</p>
+                        <div class="blog-meta">
+                            <span>By Dr. Sarah Jenkins</span>
+                            <span>• 5 min read</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="blog-card reveal-up delay-1">
+                    <div class="blog-img" style="background-color: #222;"></div>
+                    <div class="blog-content">
+                        <span class="blog-category">Recovery</span>
+                        <h3 class="blog-title">Why Sleep is Your Most Important Supplement</h3>
+                        <p class="blog-excerpt">You don't grow in the gym; you grow in bed. Learn how to optimize your sleep architecture.</p>
+                        <div class="blog-meta">
+                            <span>By Marcus V.</span>
+                            <span>• 4 min read</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="blog-card reveal-up delay-2">
+                    <div class="blog-img" style="background-color: #111;"></div>
+                    <div class="blog-content">
+                        <span class="blog-category">Workout</span>
+                        <h3 class="blog-title">Mastering the Deadlift: 3 Cues to Prevent Injury</h3>
+                        <p class="blog-excerpt">The king of all exercises demands respect. Fix your form with these elite coaching cues.</p>
+                        <div class="blog-meta">
+                            <span>By Coach David</span>
+                            <span>• 7 min read</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="contact-section">
+        <div class="contact-mesh">
+            <div class="mesh-orb orb-1"></div>
+            <div class="mesh-orb orb-2"></div>
+            <div class="mesh-orb orb-3"></div>
+        </div>
+        <div class="contact-grid-overlay"></div>
+        
+        <div class="container contact-container">
+            <div class="contact-header">
+                <div class="contact-label">REACH OUT</div>
+                <h2 class="contact-title">
+                    <div class="title-line">LET'S BUILD SOMETHING</div>
+                    <div class="title-line stagger-word">
+                        <span>E</span><span>X</span><span>T</span><span>R</span><span>A</span><span>O</span><span>R</span><span>D</span><span>I</span><span>N</span><span>A</span><span>R</span><span>Y</span>
+                    </div>
+                </h2>
+                <p class="contact-subtitle">Drop us a message and our team will reach out within 2 hours. Your transformation starts with one conversation.</p>
+            </div>
+
+            <div class="contact-layout">
+                <!-- Left Form Column -->
+                <div class="contact-form-col">
+                    <div class="contact-form-card">
+                        <div class="form-header">
+                            <h3>START YOUR JOURNEY</h3>
+                            <span class="sub">Free consultation included</span>
+                        </div>
+                        
+                        <form id="contact-form" class="main-form">
+                            <div class="form-row">
+                                <div class="floating-input">
+                                    <input type="text" id="fname" required>
+                                    <label for="fname">Full Name</label>
+                                    <i class="fa-solid fa-user input-icon"></i>
+                                    <div class="input-line"></div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="floating-input">
+                                    <input type="email" id="email" required>
+                                    <label for="email">Email Address</label>
+                                    <i class="fa-solid fa-envelope input-icon"></i>
+                                    <div class="input-line"></div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="floating-input phone-input">
+                                    <span class="phone-prefix">+91</span>
+                                    <input type="tel" id="phone" required>
+                                    <label for="phone">Phone Number</label>
+                                    <div class="input-line"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="custom-select" id="goal-select">
+                                    <div class="select-selected">Your Goal <i class="fa-solid fa-chevron-down"></i></div>
+                                    <div class="select-items select-hide">
+                                        <div data-value="weight-loss"><i data-lucide="activity"></i> Weight Loss</div>
+                                        <div data-value="muscle-gain"><i data-lucide="dumbbell"></i> Muscle Gain</div>
+                                        <div data-value="body-recomp"><i data-lucide="scale"></i> Body Recomposition</div>
+                                        <div data-value="athletic"><i data-lucide="trophy"></i> Athletic Performance</div>
+                                        <div data-value="general"><i data-lucide="heart"></i> General Fitness</div>
+                                        <div data-value="rehab"><i data-lucide="bone"></i> Rehabilitation & Recovery</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="custom-select" id="plan-select">
+                                    <div class="select-selected">Preferred Plan <i class="fa-solid fa-chevron-down"></i></div>
+                                    <div class="select-items select-hide">
+                                        <div data-value="starter"><i data-lucide="zap"></i> Starter — ₹999/mo</div>
+                                        <div data-value="pro"><i data-lucide="flame"></i> Pro — ₹1,999/mo <span class="tag-orange">Most Popular</span></div>
+                                        <div data-value="elite"><i data-lucide="gem"></i> Elite — ₹3,499/mo</div>
+                                        <div data-value="unlimited">👑 Unlimited — ₹5,999/mo</div>
+                                        <div data-value="unsure">🤔 Not Sure Yet — Help me choose</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <label class="group-label">Preferred Session Timing</label>
+                                <div class="timing-pills">
+                                    <button type="button" class="timing-pill"><i data-lucide="sunrise"></i> Morning</button>
+                                    <button type="button" class="timing-pill"><i data-lucide="sun"></i> Afternoon</button>
+                                    <button type="button" class="timing-pill"><i data-lucide="moon"></i> Evening</button>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="floating-input textarea-input">
+                                    <textarea id="message" rows="4" maxlength="300" required></textarea>
+                                    <label for="message">Message</label>
+                                    <div class="input-line"></div>
+                                    <div class="char-counter">0 / 300</div>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <label class="custom-checkbox">
+                                    <input type="checkbox" id="trial-check">
+                                    <span class="checkmark">
+                                        <svg viewBox="0 0 24 24"><path d="M5 12l5 5L20 7" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                                    </span>
+                                    <span class="check-label">Yes! I want a FREE 1-day trial pass</span>
+                                </label>
+                            </div>
+
+                            <button type="submit" class="submit-btn" id="submit-btn">
+                                <span class="btn-text">SEND MESSAGE</span>
+                                <div class="btn-spinner"></div>
+                            </button>
+                            <div class="secure-text"><i class="fa-solid fa-lock"></i> Your data is 100% secure & private</div>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Right Info Column -->
+                <div class="contact-info-col">
+                    <div class="quick-stats-bar">
+                        <div class="stat-pill"><i class="fa-solid fa-bolt"></i> 2hr Response Time</div>
+                        <div class="stat-pill"><i class="fa-solid fa-star"></i> 4.9/5 Rating</div>
+                        <div class="stat-pill"><i class="fa-solid fa-check-circle"></i> 5,200+ Members</div>
+                    </div>
+
+                    <div class="info-cards-stack">
+                        <!-- Card 1 -->
+                        <div class="info-card info-card-anim">
+                            <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+                            <div class="info-content">
+                                <h4>Visit Us</h4>
+                                <p>123 Fitness Avenue, Sector 18<br>Noida, Uttar Pradesh 201301</p>
+                                <div class="info-badge">10 mins · Sector 18 Metro</div>
+                            </div>
+                        </div>
+
+                        <!-- Card 2 -->
+                        <div class="info-card info-card-anim">
+                            <div class="info-icon"><i class="fa-solid fa-phone"></i></div>
+                            <div class="info-content">
+                                <h4>Call or WhatsApp</h4>
+                                <div class="info-number">+91 98765 43210</div>
+                                <div class="info-actions">
+                                    <a href="#" class="btn-ghost-sm"><i class="fa-solid fa-phone"></i> Call Now</a>
+                                    <a href="#" class="btn-whatsapp-sm"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 3 -->
+                        <div class="info-card info-card-anim relative">
+                            <div id="live-status-badge" class="live-status">
+                                <span class="pulse-dot"></span> <span class="status-text">OPEN NOW</span>
+                            </div>
+                            <div class="info-icon"><i class="fa-solid fa-clock"></i></div>
+                            <div class="info-content">
+                                <h4>We're Open</h4>
+                                <div class="hours-table">
+                                    <div class="hour-row" id="row-mon-fri"><span>Mon–Fri</span> <span>5:00 AM – 11:00 PM</span></div>
+                                    <div class="hour-row" id="row-sat"><span>Saturday</span> <span>6:00 AM – 10:00 PM</span></div>
+                                    <div class="hour-row" id="row-sun"><span>Sunday</span> <span>7:00 AM – 8:00 PM</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="map-block">
+                        <div class="map-placeholder">
+                            <i class="fa-solid fa-location-dot map-pin"></i>
+                            <div class="map-text">INFERNEX GYM — Sector 18, Noida</div>
+                            <a href="#" class="map-link">View on Google Maps &rarr;</a>
+                        </div>
+                    </div>
+
+                    <div class="social-strip">
+                        <div class="social-strip-label">Follow Us</div>
+                        <div class="social-circles">
+                            <a href="#" class="social-circle sc-insta"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#" class="social-circle sc-yt"><i class="fa-brands fa-youtube"></i></a>
+                            <a href="#" class="social-circle sc-fb"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#" class="social-circle sc-wa"><i class="fa-brands fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="footer" class="footer section-padding">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand reveal-up">
+                    <a href="#" class="logo footer-logo">INFERNEX</a>
+                    <p class="footer-desc">Where elite athletes are built. Join the sanctuary and forge your legacy today.</p>
+                    <div class="social-icons mt-1">
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links reveal-up delay-1">
+                    <h3>Explore</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#classes">Classes</a></li>
+                        <li><a href="#trainers">Trainers</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact reveal-up delay-2">
+                    <h3>Visit Us</h3>
+                    <ul class="contact-info">
+                        <li><i class="fa-solid fa-location-dot"></i> 123 Elite Avenue, NY 10001</li>
+                        <li><i class="fa-solid fa-phone"></i> +1 (555) 123-4567</li>
+                        <li><i class="fa-solid fa-envelope"></i> join@infernexgym.com</li>
+                        <li><i class="fa-solid fa-clock"></i> 24/7 For Pro & Elite</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-newsletter reveal-up delay-3">
+                    <h3>Stay Updated</h3>
+                    <p>Get training tips and exclusive offers.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your Email Address" required>
+                        <button type="submit"><i class="fa-solid fa-arrow-right"></i></button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 INFERNEX GYM. All rights reserved.</p>
+                <div class="legal-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
